@@ -23,7 +23,7 @@
                            :format => 'js') %>">
   </script>
   <%# Usability: display default cursor if tasks cannot be dragged %>
-  <% unless User.current.allowed_to?(:update_tasks, @project) %> 
+  <% unless User.current.allowed_to?(:update_tasks, @project) %>
     <style type="text/css">
     #taskboard .issue{cursor:default;}
     </style>
@@ -40,8 +40,6 @@
 
 <%- content_for :view_specific_users do %>
 <span id="userselect">
-<ul style="list-style:none; margin:0px">
-  <li><label>
     <select class="userfilter" size="5" name="filter-user-selection" multiple="multiple" title="User selection">
       <option value='s'>Show empty Stories</option>
       <option value='c'>Show closed Stories</option>
@@ -51,9 +49,6 @@
       <% end %>
       </optgroup>
       </select>
-  </label></li>
-</ul>
-<br style="clear:both" />
 </span>
 <%- end %>
 
@@ -67,7 +62,6 @@
 <%- end %>
 
 <%- content_for :main do %>
-<span id="userid" style="visibility:hidden;"><%= User.current.id %></span>
 <div id="taskboard">
 
 
@@ -135,6 +129,7 @@
     <%- end %>
   </table>
 </div>
+<span id="userid" style="visibility:hidden;"><%= User.current.id %></span>
 <%- end %>
 
 <%- content_for :helpers do %>

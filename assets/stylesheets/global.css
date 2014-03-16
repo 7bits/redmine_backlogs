@@ -66,18 +66,19 @@ body.loading #refresh{
   background-position:-6px 1px;
   padding-top:5px;
 }
-/* MAIN */
+/* MAIN
 #main{
   display:block;
   height:100%;
   width:100%;
-  margin: 0; /*yes, we do!*/
+  margin: 0;
 }
 
 #content {
   margin:0;
   padding: 0;
 }
+*/
 
 .meta{
   display:none;
@@ -85,7 +86,7 @@ body.loading #refresh{
 #helpers{
   display:none;
 }
-/* 
+/*
   .editor is the classname for field editors of sprint,
   story, task, impediment. These field editors get created
   at runtime whenever any of the above models are edited.

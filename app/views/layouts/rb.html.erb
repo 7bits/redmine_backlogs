@@ -74,7 +74,7 @@ RB.$(function(){
     </div>
     <% end %>
 
-    <h1><%= page_header_title %>&nbsp;<%= breadcrumb_separator %><%= yield :breadcrumbs -%></h1>
+    <h1><%= page_header_title %></h1>
 
     <% if display_main_menu?(@project) %>
     <div id="main-menu">
@@ -85,7 +85,7 @@ RB.$(function(){
 </div>
 <% end %>
 
-  <div id="main" class="rb-main rb-theme-default <%= sidebar_content? ? '' : 'nosidebar' %>">
+  <div id="main" class="<%= sidebar_content? ? '' : 'nosidebar' %>">
     <div id="sidebar">
         <%= yield :sidebar %>
         <%= view_layouts_base_sidebar_hook_response %>
@@ -93,8 +93,13 @@ RB.$(function(){
 
     <div id="content">
       <%= render_flash_messages %>
-      <div id="rbcontentwrapper">
-      <div id="toolbar" class="rb-toolbar">
+
+      <div class="contextual">
+        <%= yield :view_specific_users -%>
+        <%= yield :view_specific_links -%>
+      </div>
+
+      <h2>
         <% unless Backlogs.setting[:show_redmine_std_header] %>
         <div class="breadcrumbs">
           <%= render_project_jump_box %>
@@ -102,17 +107,13 @@ RB.$(function(){
           <%= breadcrumb_separator %>
           <%= yield :breadcrumbs -%>
         </div>
+        <% else %>
+          <%= yield :breadcrumbs -%>
         <% end %>
-        <div class="userselect">
-          <%= yield :view_specific_users -%>
-        </div>
-        <div class="links">
-          <%= yield :view_specific_links -%>
-        </div>
-      </div>
+      </h2>
 
       <%= yield :main %>
-      </div>
+
       <div style="clear:both;"></div>
     </div>
   </div>
