@@ -2,7 +2,7 @@
  * reserved classes are
  * .backlog (used in master_backlog.js to initialize all backlogs)
  * .model (used in backlog.js editable_inplace.js model.js)
- * .sprint (used in backlog.js 
+ * .sprint (used in backlog.js
  * .stories (used in backlog.js for sortable)
  * .editor
  * .editable (bind click on)
@@ -103,10 +103,10 @@ ul li { vertical-align: bottom; } /* close IE7 gap between list items */
   margin:0 0 10px 0;
   position:relative;
   /* IE only*/
-  border: 1px solid #CCCCCC;
-  background: -webkit-gradient(linear, left top, left bottom, from(#EEE), to(#CCC));
-  background: -moz-linear-gradient(top, #EEE, #CCC);
-  filter:progid:DXImageTransform.Microsoft.Gradient(Enabled=1,GradientType=0,StartColorStr=#EEEEEE,EndColorStr=#CCCCCC);
+  border: 1px solid #EAEAEA;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FEFEFE), to(#EAEAEA));
+  background: -moz-linear-gradient(top, #FEFEFE, #EAEAEA);
+  filter:progid:DXImageTransform.Microsoft.Gradient(Enabled=1,GradientType=0,StartColorStr=#FEFEFE,EndColorStr=#EAEAEA);
 }
 
 #backlogs_container .header{
@@ -114,17 +114,17 @@ ul li { vertical-align: bottom; } /* close IE7 gap between list items */
   -moz-border-radius:5px 5px 0px 0px;
   -webkit-border-radius:5px 5px 0px 0px;
   border-radius:5px 5px 0px 0px;
-  background-color:#CCCCCC;
-  background: -webkit-gradient(linear, left top, left bottom, from(#EEE), to(#CCC));
-  background: -moz-linear-gradient(top, #EEE, #CCC);
-  filter:progid:DXImageTransform.Microsoft.Gradient(Enabled=1,GradientType=0,StartColorStr=#EEEEEE,EndColorStr=#CCCCCC);
+  background-color:#EAEAEA;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FAFAFA), to(#EAEAEA));
+  background: -moz-linear-gradient(top, #FAFAFA, #EAEAEA);
+  filter:progid:DXImageTransform.Microsoft.Gradient(Enabled=1,GradientType=0,StartColorStr=#FAFAFA,EndColorStr=#EAEAEA);
   position:relative;
   white-space: nowrap;
   height:30px;
   border-bottom: 1px solid #AAAAAA
 }
 /*.backlog .closedbacklog .header{
-  background: #CCCCCC;
+  background: #EAEAEA;
 }*/
 #backlogs_container .header .menu{
   -moz-box-shadow: 1px 0px 0px #DEDEDE;
@@ -286,7 +286,7 @@ ul li { vertical-align: bottom; } /* close IE7 gap between list items */
 .header .date{
   height:28px;
   line-height:28px;
-  white-space: nowrap; 
+  white-space: nowrap;
   font-size:12px;
 }
 
@@ -358,10 +358,10 @@ ul li { vertical-align: bottom; } /* close IE7 gap between list items */
   float: left;
 }
 #backlogs_container .stories .story .id .t * {
-  background-color:#CCC;
-  background: -webkit-gradient(linear, left top, left bottom, from(#EEE), to(#CCC));
-  background: -moz-linear-gradient(top, #EEE, #CCC);
-  filter:progid:DXImageTransform.Microsoft.Gradient(Enabled=1,GradientType=0,StartColorStr=#EEEEEE,EndColorStr=#CCCCCC);
+  background-color:#EAEAEA;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FEFEFE), to(#EAEAEA));
+  background: -moz-linear-gradient(top, #FEFEFE, #EAEAEA);
+  filter:progid:DXImageTransform.Microsoft.Gradient(Enabled=1,GradientType=0,StartColorStr=#FEFEFE,EndColorStr=#EAEAEA);
   display:block;
   font-size:10px;
   height:14px;
@@ -581,6 +581,8 @@ ul li { vertical-align: bottom; } /* close IE7 gap between list items */
   height: 28px;
 }
 #backlogs_container .editing .edit-actions a {
+  color: #000000;
+  text-decoration: none;
   display: block;
   float: left;
   padding: 1px 4px 1px 4px;
@@ -590,9 +592,9 @@ ul li { vertical-align: bottom; } /* close IE7 gap between list items */
   -webkit-border-radius:4px;
   border-radius:4px;
   border: 1px solid #AAAAAA;
-  background-color:#CCC;
-  background: -webkit-gradient(linear, left top, left bottom, from(#EEE), to(#CCC));
-  background: -moz-linear-gradient(top, #EEE, #CCC);
+  background-color:#EAEAEA;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FEFEFE), to(#EAEAEA));
+  background: -moz-linear-gradient(top, #FEFEFE, #EAEAEA);
 }
 #backlogs_container .editing .edit-actions a:hover {
   background-color:#BBB;
@@ -641,51 +643,51 @@ ul li { vertical-align: bottom; } /* close IE7 gap between list items */
 /* Naive but light handling of colors by user stories tracker */
 
 #backlogs_container .stories .tracker0{
-  background: -webkit-gradient(linear, left top, left bottom, from(#EEE), to(#FFF));
-  background: -moz-linear-gradient(top, #EEE, #FFF);
-  filter:progid:DXImageTransform.Microsoft.Gradient(Enabled=1,GradientType=0,StartColorStr=#EEEEEE,EndColorStr=#FFFFFF);
+  background: -webkit-gradient(linear, left top, left bottom, from(#FEFEFE), to(#FFF));
+  background: -moz-linear-gradient(top, #FEFEFE, #FFF);
+  filter:progid:DXImageTransform.Microsoft.Gradient(Enabled=1,GradientType=0,StartColorStr=#FEFEFE,EndColorStr=#FFFFFF);
   background-color:#FFFFFF;
 }
 #backlogs_container .stories .tracker1{
-  background: -webkit-gradient(linear, left top, left bottom, from(#EEE), to(#EDD5EE));
-  background: -moz-linear-gradient(top, #EEE, #EDD5EE);
-  filter:progid:DXImageTransform.Microsoft.Gradient(Enabled=1,GradientType=0,StartColorStr=#EEEEEE,EndColorStr=#EDD5EE);
+  background: -webkit-gradient(linear, left top, left bottom, from(#FEFEFE), to(#EDD5EE));
+  background: -moz-linear-gradient(top, #FEFEFE, #EDD5EE);
+  filter:progid:DXImageTransform.Microsoft.Gradient(Enabled=1,GradientType=0,StartColorStr=#FEFEFE,EndColorStr=#EDD5EE);
   background-color:#EDD5EE;
 }
 #backlogs_container .stories .tracker2{
-  background: -webkit-gradient(linear, left top, left bottom, from(#EEE), to(#E0E3FA));
-  background: -moz-linear-gradient(top, #EEE, #E0E3FA);
-  filter:progid:DXImageTransform.Microsoft.Gradient(Enabled=1,GradientType=0,StartColorStr=#EEEEEE,EndColorStr=#E0E3FA);
+  background: -webkit-gradient(linear, left top, left bottom, from(#FEFEFE), to(#E0E3FA));
+  background: -moz-linear-gradient(top, #FEFEFE, #E0E3FA);
+  filter:progid:DXImageTransform.Microsoft.Gradient(Enabled=1,GradientType=0,StartColorStr=#FEFEFE,EndColorStr=#E0E3FA);
   background-color:#E0E3FA;
 }
 #backlogs_container .stories .tracker3{
-  background: -webkit-gradient(linear, left top, left bottom, from(#EEE), to(#EAD6C8));
-  background: -moz-linear-gradient(top, #EEE, #EAD6C8);
-  filter:progid:DXImageTransform.Microsoft.Gradient(Enabled=1,GradientType=0,StartColorStr=#EEEEEE,EndColorStr=#EAD6C8);
+  background: -webkit-gradient(linear, left top, left bottom, from(#FEFEFE), to(#EAD6C8));
+  background: -moz-linear-gradient(top, #FEFEFE, #EAD6C8);
+  filter:progid:DXImageTransform.Microsoft.Gradient(Enabled=1,GradientType=0,StartColorStr=#FEFEFE,EndColorStr=#EAD6C8);
   background-color:#EAD6C8;
 }
 #backlogs_container .stories .tracker4{
-  background: -webkit-gradient(linear, left top, left bottom, from(#EEE), to(#E7FAE0));
-  background: -moz-linear-gradient(top, #EEE, #E7FAE0);
-  filter:progid:DXImageTransform.Microsoft.Gradient(Enabled=1,GradientType=0,StartColorStr=#EEEEEE,EndColorStr=#E7FAE0);
+  background: -webkit-gradient(linear, left top, left bottom, from(#FEFEFE), to(#E7FAE0));
+  background: -moz-linear-gradient(top, #FEFEFE, #E7FAE0);
+  filter:progid:DXImageTransform.Microsoft.Gradient(Enabled=1,GradientType=0,StartColorStr=#FEFEFE,EndColorStr=#E7FAE0);
   background-color:#E7FAE0;
 }
 #backlogs_container .stories .tracker5{
-  background: -webkit-gradient(linear, left top, left bottom, from(#EEE), to(#DAFEF8));
-  background: -moz-linear-gradient(top, #EEE, #DAFEF8);
-  filter:progid:DXImageTransform.Microsoft.Gradient(Enabled=1,GradientType=0,StartColorStr=#EEEEEE,EndColorStr=#DAFEF8);
+  background: -webkit-gradient(linear, left top, left bottom, from(#FEFEFE), to(#DAFEF8));
+  background: -moz-linear-gradient(top, #FEFEFE, #DAFEF8);
+  filter:progid:DXImageTransform.Microsoft.Gradient(Enabled=1,GradientType=0,StartColorStr=#FEFEFE,EndColorStr=#DAFEF8);
   background-color:#DAFEF8;
 }
 #backlogs_container .stories .tracker6{
-  background: -webkit-gradient(linear, left top, left bottom, from(#EEE), to(#EFF0BF));
-  background: -moz-linear-gradient(top, #EEE, #EFF0BF);
-  filter:progid:DXImageTransform.Microsoft.Gradient(Enabled=1,GradientType=0,StartColorStr=#EEEEEE,EndColorStr=#EFF0BF);
+  background: -webkit-gradient(linear, left top, left bottom, from(#FEFEFE), to(#EFF0BF));
+  background: -moz-linear-gradient(top, #FEFEFE, #EFF0BF);
+  filter:progid:DXImageTransform.Microsoft.Gradient(Enabled=1,GradientType=0,StartColorStr=#FEFEFE,EndColorStr=#EFF0BF);
   background-color:#EFF0BF;
 }
 #backlogs_container .stories .tracker7{
-  background: -webkit-gradient(linear, left top, left bottom, from(#EEE), to(#FED0D0));
-  background: -moz-linear-gradient(top, #EEE, #FED0D0);
-  filter:progid:DXImageTransform.Microsoft.Gradient(Enabled=1,GradientType=0,StartColorStr=#EEEEEE,EndColorStr=#FED0D0);
+  background: -webkit-gradient(linear, left top, left bottom, from(#FEFEFE), to(#FED0D0));
+  background: -moz-linear-gradient(top, #FEFEFE, #FED0D0);
+  filter:progid:DXImageTransform.Microsoft.Gradient(Enabled=1,GradientType=0,StartColorStr=#FEFEFE,EndColorStr=#FED0D0);
   background-color:#FED0D0;
 }
 #backlogs_container .stories .story_field {
